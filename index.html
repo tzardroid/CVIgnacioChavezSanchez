@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio Chávez Sánchez - Resume / CV</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Botón de cambio de idioma */
+        .lang-switch-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .lang-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+            transition: background 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 5px 0;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 18px;
+            margin: 0 0 15px 0;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .contact-info span {
+            margin-right: 15px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            font-size: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .job-company {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .job-date {
+            float: right;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Clases para control de idioma */
+        .lang-es { display: none; }
+        .lang-en { display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- Botón flotante de idioma -->
+    <div class="lang-switch-container">
+        <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">Cambiar a Español</button>
+    </div>
+
+    <div class="container">
+        <!-- ENCABEZADO -->
+        <header>
+            <h1 id="nameTitle">Ignacio Chávez Sánchez</h1>
+            <h2 id="subTitle">Communications and Electronics Engineer | Certified Cisco Instructor</h2>
+            <div class="contact-info">
+                <span>📍 State of Mexico, Mexico</span>
+                <span>📱 +52 55 4478 7846</span>
+                <span>✉️ ignaciochavezit@outlook.com</span>
+            </div>
+        </header>
+
+        <!-- SECCIÓN: PERFIL / PROFILE -->
+        <section>
+            <h3 class="lang-en">Professional Summary</h3>
+            <h3 class="lang-es">Perfil Profesional</h3>
+            
+            <p class="lang-en">
+                Communications and Electronics Engineer graduated from Instituto Politécnico Nacional (IPN) and Certified Cisco Instructor (CCNA 200-301 & DevNet 200-901) with extensive experience in university education, corporate technical training (INTTELMEX, BBVA Bancomer, CONALITEG), and IT consulting. Specialized in evaluating, refining, and auditing code for Generative Artificial Intelligence models (RLHF, Prompt Engineering, and STEM logic evaluation). Recognized for rigorous analytical skills, the ability to audit complex technical responses under strict guidelines, and strong pedagogical expertise to structure clear justifications regarding syntax or logical errors. Focused on remote, asynchronous roles offering schedule flexibility for LLM optimization and AI implementation consulting.
+            </p>
+            <p class="lang-es">
+                Ingeniero en Comunicaciones y Electrónica egresado del Instituto Politécnico Nacional (IPN) e Instructor Certificado Cisco (CCNA 200-301 y DevNet 200-901) con amplia trayectoria en docencia universitaria, capacitación empresarial (INTTELMEX, BBVA Bancomer, CONALITEG) y consultoría en TI. Especializado en la evaluación, refinamiento y auditoría de código para modelos de Inteligencia Artificial Generativa (RLHF, Prompt Engineering y evaluación de lógica STEM). Destaco por un rigor analítico absoluto, capacidad para auditar respuestas técnicas bajo normativas estrictas (guidelines en inglés), y habilidades pedagógicas para estructurar justificaciones claras sobre errores lógicos o de sintaxis. Enfocado en posiciones remotas con flexibilidad de horario (asíncronas) para la optimización de LLMs y consultoría de implementación de IA.
+            </p>
+        </section>
+
+        <!-- SECCIÓN: COMPETENCIAS / CORE COMPETENCIES -->
+        <section>
+            <h3 class="lang-en">Core Competencies & Skills</h3>
+            <h3 class="lang-es">Competencias Clave</h3>
+            
+            <ul class="lang-en">
+                <li><strong>AI Training & Evaluation (RLHF):</strong> Large Language Model (LLM) response auditing, programming logic analysis, prompt refinement, hallucination detection, and code validation.</li>
+                <li><strong>Programmability & Networking:</strong> Cisco DevNet Associate, Automating Networks Using Cisco Platforms (200-901), script automation, JSON/REST APIs.</li>
+                <li><strong>Web Development & Backend:</strong> HTML, CSS, JavaScript, PHP, SQL (Database Fundamentals), Java, C, Visual Basic.</li>
+                <li><strong>Infrastructure & Security:</strong> Cisco Routing & Switching (CCNA 200-301), Perimeter Security, Carrier Ethernet, Optical Transport Networks (SDH, WDM, OTN), IPv4/IPv6, ACLs, and NAT.</li>
+                <li><strong>Education & Remote Work:</strong> LMS environments management (Moodle, Saba), Teams, Zoom, Google Workspace, and technical rubric design.</li>
+                <li><strong>Languages:</strong> Spanish (Native) | Technical English (Advanced reading comprehension of technical documentation and evaluation guidelines).</li>
+            </ul>
+            <ul class="lang-es">
+                <li><strong>Evaluación y Entrenamiento de IA (RLHF):</strong> Auditoría de respuestas de modelos de lenguaje (LLMs), análisis de lógica de programación, refinamiento de prompts, detección de alucinaciones y validación de código.</li>
+                <li><strong>Programabilidad y Redes:</strong> Cisco DevNet Associate, Automating Networks Using Cisco Platforms (200-901), automatización de scripts, JSON/REST APIs y programabilidad de infraestructura.</li>
+                <li><strong>Desarrollo Web & Backend:</strong> HTML, CSS, JavaScript, PHP, SQL (Fundamentos de Bases de Datos), Java, C, Visual Basic y diseño de plataformas orientadas a la web.</li>
+                <li><strong>Infraestructura & Seguridad:</strong> Routing & Switching Cisco (CCNA 200-301), Seguridad Perimetral, Carrier Ethernet, Redes Ópticas (SDH, WDM, OTN), IPv4/IPv6, ACLs y NAT.</li>
+                <li><strong>Docencia y Trabajo Remoto:</strong> Experiencia sólida administrando entornos LMS (Moodle, Saba), herramientas de colaboración remota (Teams, Zoom, Google Workspace) y diseño de rúbricas de evaluación técnica.</li>
+                <li><strong>Idiomas:</strong> Español (Nativo) | Inglés Técnico (Comprensión avanzada de documentación técnica y guías de evaluación).</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: EXPERIENCIA / EXPERIENCE -->
+        <section>
+            <h3 class="lang-en">Professional Experience</h3>
+            <h3 class="lang-es">Experiencia Profesional</h3>
+            
+            <div style="margin-bottom: 20px;">
+                <span class="job-date">Feb 2019 – Present</span>
+                <div class="job-title"><span class="lang-en">IT & Automation Technical Instructor and Consultant</span><span class="lang-es">Instructor y Consultor Técnico de TI & Automatización</span></div>
+                <div class="job-company">SAGE IT</div>
+                <ul class="lang-en">
+                    <li>Delivered advanced technical training for CCNA 200-301 and Cisco Certified DevNet Associate (CCNA 200-901) certifications.</li>
+                    <li>Provided consulting services in data transport technologies (Carrier Ethernet, SDH, WDM, OTN) and network automation tools using scripts.</li>
+                </ul>
+                <ul class="lang-es">
+                    <li>Impartición de capacitaciones técnicas avanzadas en certificación CCNA 200-301 y Cisco Certified DevNet Associate (CCNA 200-901).</li>
+                    <li>Consultoría en tecnologías de transporte de datos (Carrier Ethernet, SDH, WDM, OTN) y herramientas de automatización de red mediante scripts.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <span class="job-date">2006 – Present</span>
+                <div class="job-title"><span class="lang-en">High School & University IT Professor</span><span class="lang-es">Docente de Licenciatura y Bachillerato en Tecnologías de la Información</span></div>
+                <div class="job-company">Universidad de Londres, Universidad Justo Sierra, Albert Einstein High School, UVM & Univ. ICEL</div>
+                <p class="lang-en" style="margin: 5px 0;">Teaching courses in Perimeter Security, Cisco Networking, Java Programming, Database Fundamentals (SQL), Web Development, Operating Systems, and Digital Electronics across prestigious academic institutions.</p>
+                <p class="lang-es" style="margin: 5px 0;">Impartición de materias como Seguridad Perimetral, Redes Cisco, Programación en Java, Fundamentos de Bases de Datos (SQL), Desarrollo Web, Sistemas Operativos y Electrónica Digital en diversas instituciones educativas.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <span class="job-date">Dec 2011 – Dec 2019</span>
+                <div class="job-title"><span class="lang-en">Data & Transport Specialist / Corporate Trainer</span><span class="lang-es">Especialista en Transporte y Datos / Capacitador Corporativo</span></div>
+                <div class="job-company">INTTELMEX</div>
+                <ul class="lang-en">
+                    <li>Conducted technical training for engineering staff at Grupo CARSO and TELMEX for the operation and troubleshooting of Cisco, Nokia, and optical transport equipment.</li>
+                    <li>Developed technical manuals and evaluation methodologies for corporate projects such as BBVA Bancomer and CONALITEG.</li>
+                </ul>
+                <ul class="lang-es">
+                    <li>Capacitación técnica a personal de ingeniería de Grupo CARSO y TELMEX para la operación y diagnóstico de equipos Cisco, Nokia y tecnologías ópticas.</li>
+                    <li>Desarrollo de manuales técnicos y metodologías de evaluación para proyectos corporativos como BBVA Bancomer y CONALITEG.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EDUCACIÓN / EDUCATION -->
+        <section>
+            <h3 class="lang-en">Education & Certifications</h3>
+            <h3 class="lang-es">Formación Académica y Certificaciones</h3>
+            <ul class="lang-en">
+                <li><strong>B.S. in Communications and Electronics Engineering:</strong> Instituto Politécnico Nacional (IPN).</li>
+                <li><strong>Cisco Certified Instructor (CCNA 200-301):</strong> América Digital / Cisco.</li>
+                <li><strong>Automating Networks Using Cisco Platforms (CCNA DevNet 200-901):</strong> América Digital / Cisco.</li>
+                <li><strong>Artificial Intelligence Public Training Course (AI Fundamentals, Java, Cloud, Cybersecurity, Data Analysis):</strong> Tecnológico Nacional de México.</li>
+                <li><strong>Prompt Engineering for ChatGPT:</strong> Vanderbilt University.</li>
+            </ul>
+            <ul class="lang-es">
+                <li><strong>Ingeniería en Comunicaciones y Electrónica:</strong> Instituto Politécnico Nacional (IPN).</li>
+                <li><strong>Instructor CCNA / Implementing and Administering Cisco Solutions (CCNA 200-301):</strong> América Digital / Cisco.</li>
+                <li><strong>Automating Networks Using Cisco Platforms (CCNA DevNet 200-901):</strong> América Digital / Cisco.</li>
+                <li><strong>Curso del Centro Público de Formación en Inteligencia Artificial (Fundamentos IA, Java, Cómputo en la Nube, Ciberseguridad, Análisis de Datos):</strong> Tecnológico Nacional de México.</li>
+                <li><strong>Prompt Engineering for ChatGPT:</strong> Vanderbilt University.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- SCRIPT PARA CAMBIAR DE IDIOMA -->
+    <script>
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            const enElements = document.querySelectorAll('.lang-en');
+            const esElements = document.querySelectorAll('.lang-es');
+            const btn = document.getElementById('langToggle');
+
+            if (currentLang === 'en') {
+                enElements.forEach(el => el.style.display = 'none');
+                esElements.forEach(el => el.style.display = 'block');
+                btn.textContent = 'Switch to English';
+                currentLang = 'es';
+            } else {
+                enElements.forEach(el => el.style.display = 'block');
+                esElements.forEach(el => el.style.display = 'none');
+                btn.textContent = 'Cambiar a Español';
+                currentLang = 'en';
+            }
+        }
+
+        // Inicializar mostrando Inglés por defecto
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.lang-es').forEach(el => el.style.display = 'none');
+        });
+    </script>
+</body>
+</html>
